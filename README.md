@@ -1,10 +1,23 @@
-- 👋 Hi, I’m @MayankSingour
-- 👀 I’m interested in SDE
-- 🌱 I’m currently learning Data Structures and Algorithms
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me : msingour514@gmail.com
+Merging Two sorted array :-
 
-<!---
-MayankSingour/MayankSingour is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+      
+        vector<int> v;
+        
+        for(int i = 0; i<m; i++){
+            v.push_back(nums1[i]);
+        }
+           for(int i = 0; i<n; i++){
+               v.push_back(nums2[i]);
+           }
+           
+        sort(v.begin(), v.end());
+        
+        nums1 = v;
+            
+        }
+    
+};
