@@ -2,20 +2,19 @@
 using namespace std;
 
 int main() {
+	// your code goes here
 	int t;
-	cin>>t;
-	while(t--){
-	    int n,m;
-	    cin>>n>>m;
-	    int ans=0;
-	    if(m==0){
-	        
-	        ans = n*2;
-	        cout<<ans<<endl;
-	    }else{
-	        ans = (m%2)+n;
-	        cout<<ans<<endl;
+	cin >> t;
+	while(t){
+	    int n, m;
+	    cin >> n >> m;
+	    if(m >= n ){
+	        cout << n << endl;
 	    }
+	    else{
+	        cout << n - m + n << endl;
+	    }
+	    t--;
 	}
 	return 0;
 }
